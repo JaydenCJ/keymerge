@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="430" viewBox="0 0 720 430" font-family="Menlo, Consolas, monospace" font-size="14">
+  <rect width="720" height="430" rx="10" fill="#101418"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="22" r="6" fill="#27c93f"/>
+  <text x="360" y="27" fill="#8b949e" text-anchor="middle" font-size="12">keymerge — conflicts only on real collisions</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#7ee787">$</tspan> git merge feature        <tspan fill="#8b949e"># both branches edited package.json</tspan></text>
+    <text x="24" y="86">Auto-merging package.json</text>
+    <text x="24" y="108">Merge made by the 'ort' strategy.   <tspan fill="#7ee787">✔ no fake conflict</tspan></text>
+    <text x="24" y="144" fill="#8b949e">"dependencies": {</text>
+    <text x="24" y="166">  "express": "^4.19.0",</text>
+    <text x="24" y="188">  <tspan fill="#f778ba">"pino": "^9.0.0",</tspan>      <tspan fill="#8b949e">← theirs' addition</tspan></text>
+    <text x="24" y="210">  <tspan fill="#79c0ff">"zod": "^3.24.1"</tspan>       <tspan fill="#8b949e">← ours' bump</tspan></text>
+    <text x="24" y="232" fill="#8b949e">}</text>
+    <text x="24" y="272"><tspan fill="#7ee787">$</tspan> keymerge check base.json ours.json theirs.json</text>
+    <text x="24" y="296"><tspan fill="#d2a8ff">/version</tspan>        edit/edit</text>
+    <text x="24" y="318"><tspan fill="#d2a8ff">/scripts/start</tspan>  edit/edit</text>
+    <text x="24" y="340">keymerge: 2 conflicts in ours.json   <tspan fill="#ffbd2e">← only the real ones</tspan></text>
+    <text x="24" y="380"><tspan fill="#7ee787">$</tspan> keymerge install --pattern '*.json'   <tspan fill="#8b949e"># one command, done</tspan></text>
+    <text x="24" y="404" fill="#8b949e">.gitattributes: added "*.json merge=keymerge"</text>
+  </g>
+</svg>

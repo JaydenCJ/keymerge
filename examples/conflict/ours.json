@@ -1,0 +1,7 @@
+{
+  "name": "shop-api",
+  "version": "1.5.0",
+  "scripts": {
+    "start": "node server.js --port 3000"
+  }
+}

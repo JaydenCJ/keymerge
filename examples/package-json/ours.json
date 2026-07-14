@@ -1,0 +1,14 @@
+{
+  "name": "shop-api",
+  "version": "1.4.0",
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "eslint .",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.19.0",
+    "zod": "^3.24.1"
+  },
+  "keywords": ["api", "shop"]
+}
